@@ -77,6 +77,37 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField6 = new javax.swing.JFormattedTextField();
         jLabel16 = new javax.swing.JLabel();
         jPanel20 = new javax.swing.JPanel();
+        jPanel50Is1PercentOfWhatNumber = new javax.swing.JPanel();
+        jPanel22 = new javax.swing.JPanel();
+        jButtonHamburgerMenu2 = new javax.swing.JButton();
+        jLabel19 = new javax.swing.JLabel();
+        jButtonRefresh2 = new javax.swing.JButton();
+        jPanel27 = new javax.swing.JPanel();
+        jFormattedTextField7 = new javax.swing.JFormattedTextField();
+        jLabel22 = new javax.swing.JLabel();
+        jPanel28 = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jFormattedTextField9 = new javax.swing.JFormattedTextField();
+        jPanel29 = new javax.swing.JPanel();
+        jFormattedTextField8 = new javax.swing.JFormattedTextField();
+        jLabel24 = new javax.swing.JLabel();
+        jPanel30 = new javax.swing.JPanel();
+        jPanelWhatPercentOf = new javax.swing.JPanel();
+        jPanel23 = new javax.swing.JPanel();
+        jButtonHamburgerMenu3 = new javax.swing.JButton();
+        jLabel20 = new javax.swing.JLabel();
+        jButtonRefresh3 = new javax.swing.JButton();
+        jPanel21 = new javax.swing.JPanel();
+        jFormattedTextField10 = new javax.swing.JFormattedTextField();
+        jPanel24 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        jPanel25 = new javax.swing.JPanel();
+        jFormattedTextField11 = new javax.swing.JFormattedTextField();
+        jPanel26 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        jPanel31 = new javax.swing.JPanel();
+        jFormattedTextField12 = new javax.swing.JFormattedTextField();
+        jPanel32 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(328, 432));
@@ -165,11 +196,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 361, Short.MAX_VALUE)
+            .addGap(0, 328, Short.MAX_VALUE)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 318, Short.MAX_VALUE)
+            .addGap(0, 130, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -684,6 +715,344 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
         jPanel1.add(jPanelPercentageIncreaseDecrease, "card4");
 
+        jPanel50Is1PercentOfWhatNumber.setLayout(new java.awt.GridBagLayout());
+
+        jPanel22.setBackground(new java.awt.Color(34, 40, 44));
+        jPanel22.setPreferredSize(new java.awt.Dimension(361, 30));
+        jPanel22.setLayout(new java.awt.GridBagLayout());
+
+        jButtonHamburgerMenu2.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu2.setBorder(null);
+        jButtonHamburgerMenu2.setFocusPainted(false);
+        jButtonHamburgerMenu2.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonHamburgerMenu2MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel22.add(jButtonHamburgerMenu2, gridBagConstraints);
+
+        jLabel19.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel19.setText("50 is 1% of what number?");
+        jLabel19.setPreferredSize(new java.awt.Dimension(361, 30));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.weightx = 0.5;
+        jPanel22.add(jLabel19, gridBagConstraints);
+
+        jButtonRefresh2.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh2.setBorder(null);
+        jButtonRefresh2.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonRefresh2MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 5);
+        jPanel22.add(jButtonRefresh2, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.weightx = 0.5;
+        jPanel50Is1PercentOfWhatNumber.add(jPanel22, gridBagConstraints);
+
+        jPanel27.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jFormattedTextField7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
+        jFormattedTextField7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jFormattedTextField7FocusLost(evt);
+            }
+        });
+        jFormattedTextField7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextField7KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 38, 0, 0);
+        jPanel27.add(jFormattedTextField7, gridBagConstraints);
+
+        jLabel22.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel22.setText("is");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 24);
+        jPanel27.add(jLabel22, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(50, 0, 0, 0);
+        jPanel50Is1PercentOfWhatNumber.add(jPanel27, gridBagConstraints);
+
+        jPanel28.setLayout(new java.awt.GridBagLayout());
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel23.setText("of");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(10, 19, 0, 5);
+        jPanel28.add(jLabel23, gridBagConstraints);
+
+        jFormattedTextField9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jFormattedTextField9.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
+        jFormattedTextField9.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 39);
+        jPanel28.add(jFormattedTextField9, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 0);
+        jPanel50Is1PercentOfWhatNumber.add(jPanel28, gridBagConstraints);
+
+        jPanel29.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jFormattedTextField8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
+        jFormattedTextField8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jFormattedTextField8FocusLost(evt);
+            }
+        });
+        jFormattedTextField8.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextField8KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 38, 0, 0);
+        jPanel29.add(jFormattedTextField8, gridBagConstraints);
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel24.setText("%");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 17);
+        jPanel29.add(jLabel24, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 0);
+        jPanel50Is1PercentOfWhatNumber.add(jPanel29, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
+        jPanel30.setLayout(jPanel30Layout);
+        jPanel30Layout.setHorizontalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 328, Short.MAX_VALUE)
+        );
+        jPanel30Layout.setVerticalGroup(
+            jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 248, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weighty = 1.0;
+        jPanel50Is1PercentOfWhatNumber.add(jPanel30, gridBagConstraints);
+
+        jPanel1.add(jPanel50Is1PercentOfWhatNumber, "card5");
+
+        jPanelWhatPercentOf.setLayout(new java.awt.GridBagLayout());
+
+        jPanel23.setBackground(new java.awt.Color(34, 40, 44));
+        jPanel23.setPreferredSize(new java.awt.Dimension(361, 30));
+        jPanel23.setLayout(new java.awt.GridBagLayout());
+
+        jButtonHamburgerMenu3.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu3.setBorder(null);
+        jButtonHamburgerMenu3.setFocusPainted(false);
+        jButtonHamburgerMenu3.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonHamburgerMenu3MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel23.add(jButtonHamburgerMenu3, gridBagConstraints);
+
+        jLabel20.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel20.setText("Percentage (What % of)");
+        jLabel20.setPreferredSize(new java.awt.Dimension(361, 30));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.weightx = 0.5;
+        jPanel23.add(jLabel20, gridBagConstraints);
+
+        jButtonRefresh3.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh3.setBorder(null);
+        jButtonRefresh3.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonRefresh3MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 5);
+        jPanel23.add(jButtonRefresh3, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.weightx = 0.5;
+        jPanelWhatPercentOf.add(jPanel23, gridBagConstraints);
+
+        jPanel21.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jFormattedTextField10.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
+        jFormattedTextField10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField10.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jFormattedTextField10FocusLost(evt);
+            }
+        });
+        jFormattedTextField10.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextField10KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(20, 40, 0, 40);
+        jPanel21.add(jFormattedTextField10, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(40, 0, 0, 0);
+        jPanelWhatPercentOf.add(jPanel21, gridBagConstraints);
+
+        jPanel24.setLayout(new java.awt.GridBagLayout());
+
+        jLabel17.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel17.setText("is what percent of");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 0.5;
+        jPanel24.add(jLabel17, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(20, 40, 0, 40);
+        jPanelWhatPercentOf.add(jPanel24, gridBagConstraints);
+
+        jPanel25.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jFormattedTextField11.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
+        jFormattedTextField11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField11.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jFormattedTextField11FocusLost(evt);
+            }
+        });
+        jFormattedTextField11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextField11KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 40, 0, 40);
+        jPanel25.add(jFormattedTextField11, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanelWhatPercentOf.add(jPanel25, gridBagConstraints);
+
+        jPanel26.setLayout(new java.awt.GridBagLayout());
+
+        jLabel18.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel18.setText("Answer:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 0.5;
+        jPanel26.add(jLabel18, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(20, 40, 0, 40);
+        jPanelWhatPercentOf.add(jPanel26, gridBagConstraints);
+
+        jPanel31.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField12.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jFormattedTextField12.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
+        jFormattedTextField12.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 40, 0, 40);
+        jPanel31.add(jFormattedTextField12, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanelWhatPercentOf.add(jPanel31, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel32Layout = new javax.swing.GroupLayout(jPanel32);
+        jPanel32.setLayout(jPanel32Layout);
+        jPanel32Layout.setHorizontalGroup(
+            jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel32Layout.setVerticalGroup(
+            jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 204, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.weighty = 1.0;
+        jPanelWhatPercentOf.add(jPanel32, gridBagConstraints);
+
+        jPanel1.add(jPanelWhatPercentOf, "card6");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -846,18 +1215,95 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jFormattedTextField5KeyReleased
 
+    private void jButtonHamburgerMenu2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonHamburgerMenu2MouseClicked
+
+
+    }//GEN-LAST:event_jButtonHamburgerMenu2MouseClicked
+
+    private void jButtonRefresh2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonRefresh2MouseClicked
+
+ 
+
+    }//GEN-LAST:event_jButtonRefresh2MouseClicked
+
+    private void jFormattedTextField7FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jFormattedTextField7FocusLost
+
+ 
+    }//GEN-LAST:event_jFormattedTextField7FocusLost
+
+    private void jFormattedTextField7KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField7KeyReleased
+
+
+    }//GEN-LAST:event_jFormattedTextField7KeyReleased
+
+    private void jFormattedTextField8FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jFormattedTextField8FocusLost
+
+
+    }//GEN-LAST:event_jFormattedTextField8FocusLost
+
+    private void jFormattedTextField8KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField8KeyReleased
+
+
+
+    }//GEN-LAST:event_jFormattedTextField8KeyReleased
+
+    private void jButtonHamburgerMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonHamburgerMenu3MouseClicked
+
+
+    }//GEN-LAST:event_jButtonHamburgerMenu3MouseClicked
+
+    private void jButtonRefresh3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonRefresh3MouseClicked
+
+
+
+    }//GEN-LAST:event_jButtonRefresh3MouseClicked
+
+    private void jFormattedTextField10FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jFormattedTextField10FocusLost
+
+
+
+    }//GEN-LAST:event_jFormattedTextField10FocusLost
+
+    private void jFormattedTextField10KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField10KeyReleased
+
+
+
+    }//GEN-LAST:event_jFormattedTextField10KeyReleased
+
+    private void jFormattedTextField11FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jFormattedTextField11FocusLost
+
+
+
+    }//GEN-LAST:event_jFormattedTextField11FocusLost
+
+    private void jFormattedTextField11KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField11KeyReleased
+
+
+
+    }//GEN-LAST:event_jFormattedTextField11KeyReleased
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonHamburgerMenu;
     private javax.swing.JButton jButtonHamburgerMenu1;
+    private javax.swing.JButton jButtonHamburgerMenu2;
+    private javax.swing.JButton jButtonHamburgerMenu3;
     private javax.swing.JButton jButtonRefresh;
     private javax.swing.JButton jButtonRefresh1;
+    private javax.swing.JButton jButtonRefresh2;
+    private javax.swing.JButton jButtonRefresh3;
     private javax.swing.JFormattedTextField jFormattedTextField1;
+    private javax.swing.JFormattedTextField jFormattedTextField10;
+    private javax.swing.JFormattedTextField jFormattedTextField11;
+    private javax.swing.JFormattedTextField jFormattedTextField12;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField3;
     private javax.swing.JFormattedTextField jFormattedTextField4;
     private javax.swing.JFormattedTextField jFormattedTextField5;
     private javax.swing.JFormattedTextField jFormattedTextField6;
+    private javax.swing.JFormattedTextField jFormattedTextField7;
+    private javax.swing.JFormattedTextField jFormattedTextField8;
+    private javax.swing.JFormattedTextField jFormattedTextField9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -866,7 +1312,14 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -887,9 +1340,22 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel19;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel20;
+    private javax.swing.JPanel jPanel21;
+    private javax.swing.JPanel jPanel22;
+    private javax.swing.JPanel jPanel23;
+    private javax.swing.JPanel jPanel24;
+    private javax.swing.JPanel jPanel25;
+    private javax.swing.JPanel jPanel26;
+    private javax.swing.JPanel jPanel27;
+    private javax.swing.JPanel jPanel28;
+    private javax.swing.JPanel jPanel29;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel30;
+    private javax.swing.JPanel jPanel31;
+    private javax.swing.JPanel jPanel32;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel50Is1PercentOfWhatNumber;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
@@ -897,5 +1363,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelMain;
     private javax.swing.JPanel jPanelPercentage;
     private javax.swing.JPanel jPanelPercentageIncreaseDecrease;
+    private javax.swing.JPanel jPanelWhatPercentOf;
     // End of variables declaration//GEN-END:variables
 }
