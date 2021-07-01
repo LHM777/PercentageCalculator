@@ -175,17 +175,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanelMain.add(jPanel4, gridBagConstraints);
 
         jPanel5.setBackground(new java.awt.Color(44, 52, 58));
-        jPanel5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel5MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel5MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel5MouseExited(evt);
-            }
-        });
         jPanel5.setLayout(new java.awt.GridBagLayout());
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -217,7 +206,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 130, Short.MAX_VALUE)
+            .addGap(0, 220, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -230,17 +219,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanelMain.add(jPanel10, gridBagConstraints);
 
         jPanel6.setBackground(new java.awt.Color(44, 52, 58));
-        jPanel6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel6MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel6MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel6MouseExited(evt);
-            }
-        });
         jPanel6.setLayout(new java.awt.GridBagLayout());
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -263,17 +241,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanelMain.add(jPanel6, gridBagConstraints);
 
         jPanel7.setBackground(new java.awt.Color(44, 52, 58));
-        jPanel7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel7MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel7MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel7MouseExited(evt);
-            }
-        });
         jPanel7.setLayout(new java.awt.GridBagLayout());
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -294,17 +261,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanelMain.add(jPanel7, gridBagConstraints);
 
         jPanel8.setBackground(new java.awt.Color(44, 52, 58));
-        jPanel8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel8MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel8MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel8MouseExited(evt);
-            }
-        });
         jPanel8.setLayout(new java.awt.GridBagLayout());
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -325,17 +281,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanelMain.add(jPanel8, gridBagConstraints);
 
         jPanel9.setBackground(new java.awt.Color(44, 52, 58));
-        jPanel9.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel9MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jPanel9MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jPanel9MouseExited(evt);
-            }
-        });
         jPanel9.setLayout(new java.awt.GridBagLayout());
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -367,6 +312,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel12.setLayout(new java.awt.GridBagLayout());
 
         jButtonHamburgerMenu.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/hamburgerMenuIcon.png"))); // NOI18N
         jButtonHamburgerMenu.setBorder(null);
         jButtonHamburgerMenu.setFocusPainted(false);
         jButtonHamburgerMenu.setPreferredSize(new java.awt.Dimension(40, 30));
@@ -391,6 +337,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel12.add(jLabel9, gridBagConstraints);
 
         jButtonRefresh.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/refreshIcon.png"))); // NOI18N
         jButtonRefresh.setBorder(null);
         jButtonRefresh.setPreferredSize(new java.awt.Dimension(40, 30));
         jButtonRefresh.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -527,11 +474,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
+            .addGap(0, 361, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 160, Short.MAX_VALUE)
+            .addGap(0, 156, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -551,6 +498,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel17.setLayout(new java.awt.GridBagLayout());
 
         jButtonHamburgerMenu1.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/hamburgerMenuIcon.png"))); // NOI18N
         jButtonHamburgerMenu1.setBorder(null);
         jButtonHamburgerMenu1.setFocusPainted(false);
         jButtonHamburgerMenu1.setPreferredSize(new java.awt.Dimension(40, 30));
@@ -575,6 +523,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel17.add(jLabel12, gridBagConstraints);
 
         jButtonRefresh1.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/refreshIcon.png"))); // NOI18N
         jButtonRefresh1.setBorder(null);
         jButtonRefresh1.setPreferredSize(new java.awt.Dimension(40, 30));
         jButtonRefresh1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -716,11 +665,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 385, Short.MAX_VALUE)
+            .addGap(0, 361, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 223, Short.MAX_VALUE)
+            .addGap(0, 139, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -739,6 +688,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel22.setLayout(new java.awt.GridBagLayout());
 
         jButtonHamburgerMenu2.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/hamburgerMenuIcon.png"))); // NOI18N
         jButtonHamburgerMenu2.setBorder(null);
         jButtonHamburgerMenu2.setFocusPainted(false);
         jButtonHamburgerMenu2.setPreferredSize(new java.awt.Dimension(40, 30));
@@ -763,6 +713,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel22.add(jLabel19, gridBagConstraints);
 
         jButtonRefresh2.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/refreshIcon.png"))); // NOI18N
         jButtonRefresh2.setBorder(null);
         jButtonRefresh2.setPreferredSize(new java.awt.Dimension(40, 30));
         jButtonRefresh2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -906,6 +857,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel23.setLayout(new java.awt.GridBagLayout());
 
         jButtonHamburgerMenu3.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/hamburgerMenuIcon.png"))); // NOI18N
         jButtonHamburgerMenu3.setBorder(null);
         jButtonHamburgerMenu3.setFocusPainted(false);
         jButtonHamburgerMenu3.setPreferredSize(new java.awt.Dimension(40, 30));
@@ -930,6 +882,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel23.add(jLabel20, gridBagConstraints);
 
         jButtonRefresh3.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/refreshIcon.png"))); // NOI18N
         jButtonRefresh3.setBorder(null);
         jButtonRefresh3.setPreferredSize(new java.awt.Dimension(40, 30));
         jButtonRefresh3.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1077,6 +1030,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel33.setLayout(new java.awt.GridBagLayout());
 
         jButtonHamburgerMenu4.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/hamburgerMenuIcon.png"))); // NOI18N
         jButtonHamburgerMenu4.setBorder(null);
         jButtonHamburgerMenu4.setFocusPainted(false);
         jButtonHamburgerMenu4.setPreferredSize(new java.awt.Dimension(40, 30));
@@ -1101,6 +1055,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel33.add(jLabel21, gridBagConstraints);
 
         jButtonRefresh4.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/lhm777/percentagecalculator/refreshIcon.png"))); // NOI18N
         jButtonRefresh4.setBorder(null);
         jButtonRefresh4.setPreferredSize(new java.awt.Dimension(40, 30));
         jButtonRefresh4.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -1264,88 +1219,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
-
-  
-
-    }//GEN-LAST:event_jPanel5MouseClicked
-
-    private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-
-
-    }//GEN-LAST:event_jPanel5MouseEntered
-
-    private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-
- 
-    }//GEN-LAST:event_jPanel5MouseExited
-
-    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
-
- 
-
-    }//GEN-LAST:event_jPanel6MouseClicked
-
-    private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
-
- 
-    }//GEN-LAST:event_jPanel6MouseEntered
-
-    private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
-
-
-    }//GEN-LAST:event_jPanel6MouseExited
-
-    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
-
- 
-    }//GEN-LAST:event_jPanel7MouseClicked
-
-    private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
-
-
-
-    }//GEN-LAST:event_jPanel7MouseEntered
-
-    private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
-
- 
-
-    }//GEN-LAST:event_jPanel7MouseExited
-
-    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
-
-
-
-    }//GEN-LAST:event_jPanel8MouseClicked
-
-    private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-
-
-    }//GEN-LAST:event_jPanel8MouseEntered
-
-    private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-
-
-
-    }//GEN-LAST:event_jPanel8MouseExited
-
-    private void jPanel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseClicked
-
-
-    }//GEN-LAST:event_jPanel9MouseClicked
-
-    private void jPanel9MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseEntered
-
-
-    }//GEN-LAST:event_jPanel9MouseEntered
-
-    private void jPanel9MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel9MouseExited
-
-
-
-    }//GEN-LAST:event_jPanel9MouseExited
 
     private void jButtonHamburgerMenuMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonHamburgerMenuMouseClicked
 
