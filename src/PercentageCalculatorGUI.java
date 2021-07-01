@@ -108,6 +108,23 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel31 = new javax.swing.JPanel();
         jFormattedTextField12 = new javax.swing.JFormattedTextField();
         jPanel32 = new javax.swing.JPanel();
+        jPanelFractionToPercent = new javax.swing.JPanel();
+        jPanel33 = new javax.swing.JPanel();
+        jButtonHamburgerMenu4 = new javax.swing.JButton();
+        jLabel21 = new javax.swing.JLabel();
+        jButtonRefresh4 = new javax.swing.JButton();
+        jPanel34 = new javax.swing.JPanel();
+        jFormattedTextField13 = new javax.swing.JFormattedTextField();
+        jPanel35 = new javax.swing.JPanel();
+        jPanel36 = new javax.swing.JPanel();
+        jFormattedTextField14 = new javax.swing.JFormattedTextField();
+        jPanel37 = new javax.swing.JPanel();
+        jLabel25 = new javax.swing.JLabel();
+        jPanel38 = new javax.swing.JPanel();
+        jFormattedTextField15 = new javax.swing.JFormattedTextField();
+        jPanel39 = new javax.swing.JPanel();
+        jPanel40 = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(328, 432));
@@ -196,7 +213,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 385, Short.MAX_VALUE)
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -510,7 +527,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel16.setLayout(jPanel16Layout);
         jPanel16Layout.setHorizontalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
+            .addGap(0, 385, Short.MAX_VALUE)
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -699,11 +716,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel20.setLayout(jPanel20Layout);
         jPanel20Layout.setHorizontalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 361, Short.MAX_VALUE)
+            .addGap(0, 385, Short.MAX_VALUE)
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 139, Short.MAX_VALUE)
+            .addGap(0, 223, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -866,7 +883,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel30.setLayout(jPanel30Layout);
         jPanel30Layout.setHorizontalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 328, Short.MAX_VALUE)
+            .addGap(0, 385, Short.MAX_VALUE)
         );
         jPanel30Layout.setVerticalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1038,7 +1055,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel32.setLayout(jPanel32Layout);
         jPanel32Layout.setHorizontalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 385, Short.MAX_VALUE)
         );
         jPanel32Layout.setVerticalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1053,11 +1070,192 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
         jPanel1.add(jPanelWhatPercentOf, "card6");
 
+        jPanelFractionToPercent.setLayout(new java.awt.GridBagLayout());
+
+        jPanel33.setBackground(new java.awt.Color(34, 40, 44));
+        jPanel33.setPreferredSize(new java.awt.Dimension(361, 30));
+        jPanel33.setLayout(new java.awt.GridBagLayout());
+
+        jButtonHamburgerMenu4.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonHamburgerMenu4.setBorder(null);
+        jButtonHamburgerMenu4.setFocusPainted(false);
+        jButtonHamburgerMenu4.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonHamburgerMenu4MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
+        jPanel33.add(jButtonHamburgerMenu4, gridBagConstraints);
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(204, 204, 204));
+        jLabel21.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel21.setText("Fraction to Percent");
+        jLabel21.setPreferredSize(new java.awt.Dimension(361, 30));
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.weightx = 0.5;
+        jPanel33.add(jLabel21, gridBagConstraints);
+
+        jButtonRefresh4.setBackground(new java.awt.Color(34, 40, 44));
+        jButtonRefresh4.setBorder(null);
+        jButtonRefresh4.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButtonRefresh4MouseClicked(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
+        gridBagConstraints.weightx = 0.5;
+        gridBagConstraints.insets = new java.awt.Insets(0, 0, 0, 5);
+        jPanel33.add(jButtonRefresh4, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.ipady = 10;
+        gridBagConstraints.weightx = 0.5;
+        jPanelFractionToPercent.add(jPanel33, gridBagConstraints);
+
+        jPanel34.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField13.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextField13KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 40, 0, 40);
+        jPanel34.add(jFormattedTextField13, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 2;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(40, 0, 0, 0);
+        jPanelFractionToPercent.add(jPanel34, gridBagConstraints);
+
+        jPanel35.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        javax.swing.GroupLayout jPanel35Layout = new javax.swing.GroupLayout(jPanel35);
+        jPanel35.setLayout(jPanel35Layout);
+        jPanel35Layout.setHorizontalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 303, Short.MAX_VALUE)
+        );
+        jPanel35Layout.setVerticalGroup(
+            jPanel35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 3;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(10, 40, 0, 40);
+        jPanelFractionToPercent.add(jPanel35, gridBagConstraints);
+
+        jPanel36.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField14.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                jFormattedTextField14KeyReleased(evt);
+            }
+        });
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 40, 0, 40);
+        jPanel36.add(jFormattedTextField14, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 4;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(10, 0, 0, 0);
+        jPanelFractionToPercent.add(jPanel36, gridBagConstraints);
+
+        jPanel37.setLayout(new java.awt.GridBagLayout());
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel25.setText("Answer:");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridx = 0;
+        gridBagConstraints.gridy = 0;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.insets = new java.awt.Insets(2, 162, 2, 163);
+        jPanel37.add(jLabel25, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 5;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(20, 0, 0, 0);
+        jPanelFractionToPercent.add(jPanel37, gridBagConstraints);
+
+        jPanel38.setLayout(new java.awt.GridBagLayout());
+
+        jFormattedTextField15.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+        gridBagConstraints.ipady = 15;
+        gridBagConstraints.weightx = 1.0;
+        gridBagConstraints.insets = new java.awt.Insets(0, 40, 0, 40);
+        jPanel38.add(jFormattedTextField15, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 6;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        jPanelFractionToPercent.add(jPanel38, gridBagConstraints);
+
+        javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
+        jPanel39.setLayout(jPanel39Layout);
+        jPanel39Layout.setHorizontalGroup(
+            jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 385, Short.MAX_VALUE)
+        );
+        jPanel39Layout.setVerticalGroup(
+            jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 186, Short.MAX_VALUE)
+        );
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 7;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.NORTHWEST;
+        gridBagConstraints.weighty = 1.0;
+        jPanelFractionToPercent.add(jPanel39, gridBagConstraints);
+
+        jPanel40.setLayout(new java.awt.GridBagLayout());
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel26.setText("Convert a fraction to percent");
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
+        jPanel40.add(jLabel26, gridBagConstraints);
+
+        gridBagConstraints = new java.awt.GridBagConstraints();
+        gridBagConstraints.gridy = 1;
+        gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+        gridBagConstraints.insets = new java.awt.Insets(20, 40, 0, 40);
+        jPanelFractionToPercent.add(jPanel40, gridBagConstraints);
+
+        jPanel1.add(jPanelFractionToPercent, "card7");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 328, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1282,20 +1480,345 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     }//GEN-LAST:event_jFormattedTextField11KeyReleased
 
+    private void jButtonHamburgerMenu4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonHamburgerMenu4MouseClicked
+
+        if(evt.getSource() == jPanel5){
+
+            jPanelPercentage.setVisible(true);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel6){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(true);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel7){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(true);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel8){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(true);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel9){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(true);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu1){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu2){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu3){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu4){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh){
+
+            jFormattedTextField1.setValue(null);
+            jFormattedTextField2.setValue(null);
+            jFormattedTextField3.setValue(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh1){
+
+            jFormattedTextField4.setText(null);
+            jFormattedTextField5.setText(null);
+            jFormattedTextField6.setText(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh2){
+
+            jFormattedTextField7.setText(null);
+            jFormattedTextField9.setText(null);
+            jFormattedTextField8.setText(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh3){
+
+            jFormattedTextField10.setText(null);
+            jFormattedTextField11.setText(null);
+            jFormattedTextField12.setText(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh4){
+
+            jFormattedTextField13.setText(null);
+            jFormattedTextField14.setText(null);
+            jFormattedTextField15.setText(null);
+
+        }
+
+    }//GEN-LAST:event_jButtonHamburgerMenu4MouseClicked
+
+    private void jButtonRefresh4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButtonRefresh4MouseClicked
+
+        if(evt.getSource() == jPanel5){
+
+            jPanelPercentage.setVisible(true);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel6){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(true);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel7){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(true);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel8){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(true);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jPanel9){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(true);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu1){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu2){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu3){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonHamburgerMenu4){
+
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh){
+
+            jFormattedTextField1.setValue(null);
+            jFormattedTextField2.setValue(null);
+            jFormattedTextField3.setValue(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh1){
+
+            jFormattedTextField4.setText(null);
+            jFormattedTextField5.setText(null);
+            jFormattedTextField6.setText(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh2){
+
+            jFormattedTextField7.setText(null);
+            jFormattedTextField9.setText(null);
+            jFormattedTextField8.setText(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh3){
+
+            jFormattedTextField10.setText(null);
+            jFormattedTextField11.setText(null);
+            jFormattedTextField12.setText(null);
+
+        }
+
+        if(evt.getSource() == jButtonRefresh4){
+
+            jFormattedTextField13.setText(null);
+            jFormattedTextField14.setText(null);
+            jFormattedTextField15.setText(null);
+
+        }
+
+    }//GEN-LAST:event_jButtonRefresh4MouseClicked
+
+    private void jFormattedTextField13KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField13KeyReleased
+
+ 
+
+    }//GEN-LAST:event_jFormattedTextField13KeyReleased
+
+    private void jFormattedTextField14KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jFormattedTextField14KeyReleased
+
+
+
+    }//GEN-LAST:event_jFormattedTextField14KeyReleased
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonHamburgerMenu;
     private javax.swing.JButton jButtonHamburgerMenu1;
     private javax.swing.JButton jButtonHamburgerMenu2;
     private javax.swing.JButton jButtonHamburgerMenu3;
+    private javax.swing.JButton jButtonHamburgerMenu4;
     private javax.swing.JButton jButtonRefresh;
     private javax.swing.JButton jButtonRefresh1;
     private javax.swing.JButton jButtonRefresh2;
     private javax.swing.JButton jButtonRefresh3;
+    private javax.swing.JButton jButtonRefresh4;
     private javax.swing.JFormattedTextField jFormattedTextField1;
     private javax.swing.JFormattedTextField jFormattedTextField10;
     private javax.swing.JFormattedTextField jFormattedTextField11;
     private javax.swing.JFormattedTextField jFormattedTextField12;
+    private javax.swing.JFormattedTextField jFormattedTextField13;
+    private javax.swing.JFormattedTextField jFormattedTextField14;
+    private javax.swing.JFormattedTextField jFormattedTextField15;
     private javax.swing.JFormattedTextField jFormattedTextField2;
     private javax.swing.JFormattedTextField jFormattedTextField3;
     private javax.swing.JFormattedTextField jFormattedTextField4;
@@ -1317,9 +1840,12 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1353,13 +1879,22 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel30;
     private javax.swing.JPanel jPanel31;
     private javax.swing.JPanel jPanel32;
+    private javax.swing.JPanel jPanel33;
+    private javax.swing.JPanel jPanel34;
+    private javax.swing.JPanel jPanel35;
+    private javax.swing.JPanel jPanel36;
+    private javax.swing.JPanel jPanel37;
+    private javax.swing.JPanel jPanel38;
+    private javax.swing.JPanel jPanel39;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JPanel jPanel40;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel50Is1PercentOfWhatNumber;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jPanelFractionToPercent;
     private javax.swing.JPanel jPanelMain;
     private javax.swing.JPanel jPanelPercentage;
     private javax.swing.JPanel jPanelPercentageIncreaseDecrease;
