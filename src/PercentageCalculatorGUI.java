@@ -1221,6 +1221,20 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
 
+    private void MouseEntered(java.awt.event.MouseEvent evt) {                              
+        
+        // Change the backgound color of one of the Jpanels on mouse hover.
+        JPanel thePanel = (JPanel) evt.getSource();
+        thePanel.setBackground(new Color(54, 81, 207));
+        
+    }                             
+
+    private void MouseExited(java.awt.event.MouseEvent evt) {                             
+        
+        // Revert the backgound color of one of the Jpanels back to default after mouse hover.
+        JPanel thePanel = (JPanel) evt.getSource();
+        thePanel.setBackground(new Color(44,52,58));
+    }
 
 
 
