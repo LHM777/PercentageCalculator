@@ -1150,6 +1150,60 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         JPanel thePanel = (JPanel) evt.getSource();
         thePanel.setBackground(new Color(44,52,58));
     }
+	
+	
+	
+	
+	private void mouseClicked(java.awt.event.MouseEvent evt) {                              
+        
+            
+            //This method handles the mouseClicked event for the main panels.
+            //If you click on one of the panels, it will set the visibility of the layout that is associated with that panel to true.
+    
+            
+            
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(false);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+
+            int vertexCount2 = 5;
+            ArrayList<ArrayList<JButton>> jButtons = new ArrayList<>(vertexCount2);
+            
+            int vertexCount = 5;
+            ArrayList<ArrayList<JPanel>> graph = new ArrayList<>(vertexCount);
+            
+            //We'll initialize each element of ArrayList with another ArrayList
+            for(int i=0; i < vertexCount; i++) {
+                graph.add(new ArrayList());
+            }
+            
+            graph.get(0).add(jPanel5);
+            graph.get(0).add(jPanelPercentage);
+            graph.get(1).add(jPanel6);
+            graph.get(1).add(jPanelPercentageIncreaseDecrease);
+            graph.get(2).add(jPanel7);
+            graph.get(2).add(jPanel50Is1PercentOfWhatNumber);
+            graph.get(3).add(jPanel8);
+            graph.get(3).add(jPanelWhatPercentOf);
+            graph.get(4).add(jPanel9);
+            graph.get(4).add(jPanelWhatPercentOf);
+            
+            
+            
+            vertexCount = graph.size();
+            
+            for (int i = 0; i < vertexCount; i++){
+
+                if(graph.get(i).get(0) == evt.getSource()){
+                
+                    graph.get(i).get(1).setVisible(true);
+                    break;
+                }
+            }
+    }
 
 
 
