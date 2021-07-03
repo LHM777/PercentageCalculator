@@ -1230,12 +1230,15 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     private void hamburgerMenuClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hamburgerMenuClicked
         
+		    //Set the main panel's visibility to true.
             jPanelPercentage.setVisible(false);
             jPanelMain.setVisible(true);
             jPanelPercentageIncreaseDecrease.setVisible(false);
             jPanel50Is1PercentOfWhatNumber.setVisible(false);
             jPanelWhatPercentOf.setVisible(false);
             jPanelFractionToPercent.setVisible(false);
+			
+			
     }//GEN-LAST:event_hamburgerMenuClicked
 
 
