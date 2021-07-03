@@ -5,10 +5,12 @@
  */
 package com.lhm777.percentagecalculator;
 
-/**
- *
- * @author Lee Harvey
- */
+import java.awt.Color;
+import java.util.ArrayList;
+import javax.swing.JButton;
+import javax.swing.JPanel;
+
+
 public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     /**
@@ -217,7 +219,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 250, Short.MAX_VALUE)
+            .addGap(0, 280, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -371,6 +373,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonHamburgerMenu.setBorder(null);
         jButtonHamburgerMenu.setFocusPainted(false);
         jButtonHamburgerMenu.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hamburgerMenuClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.weightx = 0.5;
@@ -527,6 +534,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonHamburgerMenu1.setBorder(null);
         jButtonHamburgerMenu1.setFocusPainted(false);
         jButtonHamburgerMenu1.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hamburgerMenuClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.weightx = 0.5;
@@ -687,6 +699,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonHamburgerMenu2.setBorder(null);
         jButtonHamburgerMenu2.setFocusPainted(false);
         jButtonHamburgerMenu2.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hamburgerMenuClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.weightx = 0.5;
@@ -826,6 +843,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonHamburgerMenu3.setBorder(null);
         jButtonHamburgerMenu3.setFocusPainted(false);
         jButtonHamburgerMenu3.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hamburgerMenuClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.weightx = 0.5;
@@ -969,6 +991,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonHamburgerMenu4.setBorder(null);
         jButtonHamburgerMenu4.setFocusPainted(false);
         jButtonHamburgerMenu4.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonHamburgerMenu4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                hamburgerMenuClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.WEST;
         gridBagConstraints.weightx = 0.5;
@@ -1135,26 +1162,22 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-
-    private void MouseEntered(java.awt.event.MouseEvent evt) {                              
+    private void MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MouseEntered
         
         // Change the backgound color of one of the Jpanels on mouse hover.
         JPanel thePanel = (JPanel) evt.getSource();
         thePanel.setBackground(new Color(54, 81, 207));
         
-    }                             
+    }//GEN-LAST:event_MouseEntered
 
-    private void MouseExited(java.awt.event.MouseEvent evt) {                             
+    private void MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_MouseExited
         
-        // Revert the backgound color of one of the Jpanels back to default after mouse hover.
+        // Revert the backgound color of one of the Jpanels back to default after mouse hover. 44,52,58
         JPanel thePanel = (JPanel) evt.getSource();
         thePanel.setBackground(new Color(44,52,58));
-    }
-	
-	
-	
-	
-	private void mouseClicked(java.awt.event.MouseEvent evt) {                              
+    }//GEN-LAST:event_MouseExited
+
+    private void mouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_mouseClicked
         
             
             //This method handles the mouseClicked event for the main panels.
@@ -1203,11 +1226,17 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
                     break;
                 }
             }
-    }
+    }//GEN-LAST:event_mouseClicked
 
-
-
-    }//GEN-LAST:event_jFormattedTextField14KeyReleased
+    private void hamburgerMenuClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hamburgerMenuClicked
+        
+            jPanelPercentage.setVisible(false);
+            jPanelMain.setVisible(true);
+            jPanelPercentageIncreaseDecrease.setVisible(false);
+            jPanel50Is1PercentOfWhatNumber.setVisible(false);
+            jPanelWhatPercentOf.setVisible(false);
+            jPanelFractionToPercent.setVisible(false);
+    }//GEN-LAST:event_hamburgerMenuClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
