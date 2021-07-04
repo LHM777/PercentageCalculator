@@ -1265,6 +1265,8 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     private void refreshButtonClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refreshButtonClicked
         
+		
+		
             jFormattedTextField1.setValue(null);
             jFormattedTextField2.setValue(null);
             jFormattedTextField3.setValue(null);
@@ -1280,6 +1282,8 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
             jFormattedTextField13.setValue(null);
             jFormattedTextField14.setValue(null);
             jFormattedTextField15.setValue(null);
+			
+			
 			
 			
     }//GEN-LAST:event_refreshButtonClicked
