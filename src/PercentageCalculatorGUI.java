@@ -1280,6 +1280,8 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
             jFormattedTextField13.setValue(null);
             jFormattedTextField14.setValue(null);
             jFormattedTextField15.setValue(null);
+			
+			
     }//GEN-LAST:event_refreshButtonClicked
 
 
