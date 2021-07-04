@@ -219,7 +219,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 280, Short.MAX_VALUE)
+            .addGap(0, 75, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -421,6 +421,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jFormattedTextField1.setPreferredSize(new java.awt.Dimension(334, 432));
+        jFormattedTextField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -461,6 +466,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 15;
@@ -612,6 +622,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField4.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField4.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField4.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 15;
@@ -639,6 +654,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField5.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField5.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 15;
@@ -755,6 +775,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField7.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField7.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField7.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 15;
@@ -806,6 +831,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField8.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField8.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -835,7 +865,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel30Layout.setVerticalGroup(
             jPanel30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 248, Short.MAX_VALUE)
+            .addGap(0, 193, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -904,6 +934,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField10.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField10.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField10.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipady = 15;
@@ -937,6 +972,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField11.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jFormattedTextField11.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.NumberFormatter(new java.text.DecimalFormat("#,##0.################"))));
         jFormattedTextField11.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField11.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipady = 15;
@@ -989,7 +1029,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel32Layout.setVerticalGroup(
             jPanel32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 204, Short.MAX_VALUE)
+            .addGap(0, 149, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1055,6 +1095,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel34.setLayout(new java.awt.GridBagLayout());
 
         jFormattedTextField13.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField13.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -1094,6 +1139,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jPanel36.setLayout(new java.awt.GridBagLayout());
 
         jFormattedTextField14.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jFormattedTextField14.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipady = 15;
@@ -1147,7 +1197,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel39Layout.setVerticalGroup(
             jPanel39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 186, Short.MAX_VALUE)
+            .addGap(0, 131, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1181,7 +1231,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 487, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
         );
 
         pack();
@@ -1265,8 +1315,6 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     private void refreshButtonClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refreshButtonClicked
         
-		
-		
             jFormattedTextField1.setValue(null);
             jFormattedTextField2.setValue(null);
             jFormattedTextField3.setValue(null);
@@ -1282,11 +1330,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
             jFormattedTextField13.setValue(null);
             jFormattedTextField14.setValue(null);
             jFormattedTextField15.setValue(null);
-			
-			
-			
-			
     }//GEN-LAST:event_refreshButtonClicked
+
+    private void focusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_focusLost
+        
+    }//GEN-LAST:event_focusLost
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
