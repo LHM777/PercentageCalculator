@@ -397,6 +397,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/refreshIcon.png"))); // NOI18N
         jButtonRefresh.setBorder(null);
         jButtonRefresh.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                refreshButtonClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
         gridBagConstraints.weightx = 0.5;
@@ -558,6 +563,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonRefresh1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/refreshIcon.png"))); // NOI18N
         jButtonRefresh1.setBorder(null);
         jButtonRefresh1.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                refreshButtonClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
         gridBagConstraints.weightx = 0.5;
@@ -723,6 +733,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonRefresh2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/refreshIcon.png"))); // NOI18N
         jButtonRefresh2.setBorder(null);
         jButtonRefresh2.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                refreshButtonClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
         gridBagConstraints.weightx = 0.5;
@@ -867,6 +882,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonRefresh3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/refreshIcon.png"))); // NOI18N
         jButtonRefresh3.setBorder(null);
         jButtonRefresh3.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                refreshButtonClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
         gridBagConstraints.weightx = 0.5;
@@ -1015,6 +1035,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jButtonRefresh4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/refreshIcon.png"))); // NOI18N
         jButtonRefresh4.setBorder(null);
         jButtonRefresh4.setPreferredSize(new java.awt.Dimension(40, 30));
+        jButtonRefresh4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                refreshButtonClicked(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.anchor = java.awt.GridBagConstraints.EAST;
         gridBagConstraints.weightx = 0.5;
@@ -1230,16 +1255,32 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
 
     private void hamburgerMenuClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_hamburgerMenuClicked
         
-		    //Set the main panel's visibility to true.
             jPanelPercentage.setVisible(false);
             jPanelMain.setVisible(true);
             jPanelPercentageIncreaseDecrease.setVisible(false);
             jPanel50Is1PercentOfWhatNumber.setVisible(false);
             jPanelWhatPercentOf.setVisible(false);
             jPanelFractionToPercent.setVisible(false);
-			
-			
     }//GEN-LAST:event_hamburgerMenuClicked
+
+    private void refreshButtonClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_refreshButtonClicked
+        
+            jFormattedTextField1.setValue(null);
+            jFormattedTextField2.setValue(null);
+            jFormattedTextField3.setValue(null);
+            jFormattedTextField4.setValue(null);
+            jFormattedTextField5.setValue(null);
+            jFormattedTextField6.setValue(null);
+            jFormattedTextField7.setValue(null);
+            jFormattedTextField8.setValue(null);
+            jFormattedTextField9.setValue(null);
+            jFormattedTextField10.setValue(null);
+            jFormattedTextField11.setValue(null);
+            jFormattedTextField12.setValue(null);
+            jFormattedTextField13.setValue(null);
+            jFormattedTextField14.setValue(null);
+            jFormattedTextField15.setValue(null);
+    }//GEN-LAST:event_refreshButtonClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
