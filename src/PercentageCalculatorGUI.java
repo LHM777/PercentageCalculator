@@ -6,7 +6,11 @@
 package com.lhm777.percentagecalculator;
 
 import java.awt.Color;
+import java.text.NumberFormat;
+import java.text.ParsePosition;
 import java.util.ArrayList;
+import java.util.Locale;
+import java.util.regex.Pattern;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
 import javax.swing.JPanel;
@@ -428,6 +432,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
                 PercentageCalculatorGUI.this.focusLost(evt);
             }
         });
+        jFormattedTextField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -472,6 +481,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField2.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
+        jFormattedTextField2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -529,7 +543,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel16Layout.setVerticalGroup(
             jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 193, Short.MAX_VALUE)
+            .addGap(0, 156, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -632,6 +646,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
                 PercentageCalculatorGUI.this.focusLost(evt);
             }
         });
+        jFormattedTextField4.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 15;
@@ -663,6 +682,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField5.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
+        jFormattedTextField5.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -713,7 +737,7 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         );
         jPanel20Layout.setVerticalGroup(
             jPanel20Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 168, Short.MAX_VALUE)
+            .addGap(0, 139, Short.MAX_VALUE)
         );
 
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -788,6 +812,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
                 PercentageCalculatorGUI.this.focusLost(evt);
             }
         });
+        jFormattedTextField7.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
         gridBagConstraints.ipady = 15;
@@ -844,6 +873,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField8.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
+        jFormattedTextField8.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -950,6 +984,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
                 PercentageCalculatorGUI.this.focusLost(evt);
             }
         });
+        jFormattedTextField10.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
         gridBagConstraints.ipady = 15;
@@ -987,6 +1026,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField11.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
+        jFormattedTextField11.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1114,6 +1158,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
                 PercentageCalculatorGUI.this.focusLost(evt);
             }
         });
+        jFormattedTextField13.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
+            }
+        });
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
         gridBagConstraints.gridy = 0;
@@ -1157,6 +1206,11 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         jFormattedTextField14.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 PercentageCalculatorGUI.this.focusLost(evt);
+            }
+        });
+        jFormattedTextField14.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                PercentageCalculatorGUI.this.keyReleased(evt);
             }
         });
         gridBagConstraints = new java.awt.GridBagConstraints();
@@ -1347,10 +1401,103 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_refreshButtonClicked
 
     private void focusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_focusLost
-
+        
+        //This method handles the focusLost event for the jFormattedTextFields.
+        //focusLost event occurs when you click on another TextField or when the text cursor leaves the current TextField.
+        
+        /*
+        NOTE: Each jFormattedTextField works in tandem with another 2 jFormattedTextFields.
+        If a jFormattedTextField is identified as the source of the event, then we would also need to identify the other 2 jFormattedTextFields that works in tandem with the event source.
+        only then can we start processing what happens to the jFormattedTextFields.
+        */
+        
+        
+        //We will store all the jFormattedTextFields in a multidimensional ArrayList for processing.
+        int vertexCount = 5;
+        ArrayList<ArrayList<JFormattedTextField>> jFormattedTextFields = new ArrayList<>(vertexCount);
+        
+        //We'll initialize each element of ArrayList with another ArrayList
+        for(int i=0; i < vertexCount; i++) {
+                jFormattedTextFields.add(new ArrayList());
+        }
+        
+        //We add all of the jFormattedTextFields to the multidimensional ArrayList.
+        jFormattedTextFields.get(0).add(jFormattedTextField1);
+        jFormattedTextFields.get(0).add(jFormattedTextField2);
+        jFormattedTextFields.get(0).add(jFormattedTextField3);
+        jFormattedTextFields.get(1).add(jFormattedTextField4);
+        jFormattedTextFields.get(1).add(jFormattedTextField5);
+        jFormattedTextFields.get(1).add(jFormattedTextField6);
+        jFormattedTextFields.get(2).add(jFormattedTextField7);
+        jFormattedTextFields.get(2).add(jFormattedTextField8);
+        jFormattedTextFields.get(2).add(jFormattedTextField9);
+        jFormattedTextFields.get(3).add(jFormattedTextField10);
+        jFormattedTextFields.get(3).add(jFormattedTextField11);
+        jFormattedTextFields.get(3).add(jFormattedTextField12);
+        jFormattedTextFields.get(4).add(jFormattedTextField13);
+        jFormattedTextFields.get(4).add(jFormattedTextField14);
+        jFormattedTextFields.get(4).add(jFormattedTextField15);
+        
+        
+        //Loop through the entire multidimensional ArrayList to search for the source of the focusLost event.
+        for (int i = 0; i < vertexCount; i++){
+        
+            int arrayListElementSize = jFormattedTextFields.get(i).size();
+            
+            for (int j = 0; j < arrayListElementSize; j++){
+            
+                //If the event source is identified.
+                if(jFormattedTextFields.get(i).get(j) == evt.getSource()){
+                
+                    //We retrieve the contents of the source and the other jFormattedTextField associated with it for validation.
+                    String content;
+                    String content2;
+                    content = jFormattedTextFields.get(i).get(0).getText().trim();
+                    content2 = jFormattedTextFields.get(i).get(1).getText().trim();
+                    
+                    
+                    //Validate the inputs of the source and its associated jFormattedTextField.
+                    if(validateJFormatterTextFieldValue(content)){
+                    
+                        jFormattedTextFields.get(i).get(0).setText(content);
+                    }
+                    else{
+                        
+                        //If the validation fails, delete the inputs, including the contents of the result textField.
+                        jFormattedTextFields.get(i).get(0).setValue(null);
+                        jFormattedTextFields.get(i).get(2).setValue(null);
+                    }
+                    
+                    
+                    if(validateJFormatterTextFieldValue(content2)){
+                    
+                        jFormattedTextFields.get(i).get(1).setText(content2);
+                    }
+                    else{
+                    
+                        //If the validation fails, delete the inputs, including the contents of the result textField.
+                        jFormattedTextFields.get(i).get(1).setValue(null);
+                        jFormattedTextFields.get(i).get(2).setValue(null);
+                    }
+                    
+                    
+                    break;
+                }
+            }
+        }
     }//GEN-LAST:event_focusLost
 
+    private void keyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_keyReleased
 
+    
+    
+    private void keyReleased(){
+    
+    
+    }
+    
     private boolean validateJFormatterTextFieldValue(String content){
         
         //This method validates the inputs from the jFormatterTextFields.
