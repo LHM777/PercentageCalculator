@@ -1608,6 +1608,68 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
         
     }
 
+
+
+    private void calculate(int index, JFormattedTextField a, JFormattedTextField b, JFormattedTextField c){
+    
+       
+        //This method is called after we have finished the input validations and we are ready to calculate.
+        //For the calculation, we use the PercentageCalculator class.
+        //It uses the BigDecimal type to store the inputs and to format the result.
+        //BigDecimal type is capable of setting how many decimal value the result will have.
+        //BigDecimal can also strip trailing zeroes.
+        //BigDecimal can also use different rounding methods.
+        //We use the switch statement to determine what method of the PercentageCalculator class to use
+        //and what type of calculation to perform.
+        //The switch statement relies on the index of the jFormattedTextFields ArrayList to determine the appropriate method to call.
+        //This index is associated with the keyReleased event source.
+        //There is no need for the user to click a "calculate" button
+        //since the input validation and calculation is done while the user is typing.
+        
+        PercentageCalculator pc = new PercentageCalculator();
+        
+        BigDecimal value = new BigDecimal(a.getText().trim().replace(",", ""));
+        double d = value.doubleValue();
+                    
+        BigDecimal value2 = new BigDecimal(b.getText().trim().replace(",", ""));
+        double d2 = value2.doubleValue();
+        
+        double d3 = 0;
+        
+        try{
+            
+            switch (index) {
+              case 0:
+                d3 = pc.APercentOfB(d, d2);
+                break;
+                
+              case 1:
+                d3 = pc.percentageDecreaseIncrease(d, d2);
+                break;
+                
+              case 2:
+                d3 = pc.FiftyIsOnePercentOfWhatNumber(d, d2);
+                break;
+                
+              case 3:
+                d3 = pc.whatPercentOf(d, d2);
+                break;
+                
+              case 4:
+                d3 = pc.whatPercentOf(d, d2);
+                break;
+            }
+            
+            BigDecimal bd = new BigDecimal(d3);
+            bd = bd.setScale(12, RoundingMode.HALF_UP);
+            bd = bd.stripTrailingZeros();
+            c.setText(bd.toPlainString());
+            
+        }catch(HandledException e){
+        
+            c.setText(e.getMessage());
+        }
+    }
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonHamburgerMenu;
     private javax.swing.JButton jButtonHamburgerMenu1;
