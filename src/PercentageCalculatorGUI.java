@@ -1492,15 +1492,87 @@ public class PercentageCalculatorGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_focusLost
 
     private void keyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_keyReleased
-        // TODO add your handling code here:
+        
+		
+		//This method handles the keyReleased event for the jFormattedTextFields.
+        //keyReleased event occurs when you release a key on your keyboard after pressing or clicking on it.
+        
+        /*
+        NOTE: Each jFormattedTextField works in tandem with another 2 jFormattedTextFields.
+        If a jFormattedTextField is identified as the source of the event, then we would also need to identify the other 2 jFormattedTextFields that works in tandem with the event source.
+        only then can we start processing what happens to the jFormattedTextFields.
+        */
+        
+        
+        //We will store all the jFormattedTextFields in a multidimensional ArrayList for processing.
+        int vertexCount = 5;
+        ArrayList<ArrayList<JFormattedTextField>> jFormattedTextFields = new ArrayList<>(vertexCount);
+        
+        
+        //We'll initialize each element of ArrayList with another ArrayList
+        for(int i=0; i < vertexCount; i++) {
+                jFormattedTextFields.add(new ArrayList());
+        }
+        
+        
+        //We add all of the jFormattedTextFields to the multidimensional ArrayList.
+        jFormattedTextFields.get(0).add(jFormattedTextField1);
+        jFormattedTextFields.get(0).add(jFormattedTextField2);
+        jFormattedTextFields.get(0).add(jFormattedTextField3);
+        jFormattedTextFields.get(1).add(jFormattedTextField4);
+        jFormattedTextFields.get(1).add(jFormattedTextField5);
+        jFormattedTextFields.get(1).add(jFormattedTextField6);
+        jFormattedTextFields.get(2).add(jFormattedTextField7);
+        jFormattedTextFields.get(2).add(jFormattedTextField8);
+        jFormattedTextFields.get(2).add(jFormattedTextField9);
+        jFormattedTextFields.get(3).add(jFormattedTextField10);
+        jFormattedTextFields.get(3).add(jFormattedTextField11);
+        jFormattedTextFields.get(3).add(jFormattedTextField12);
+        jFormattedTextFields.get(4).add(jFormattedTextField13);
+        jFormattedTextFields.get(4).add(jFormattedTextField14);
+        jFormattedTextFields.get(4).add(jFormattedTextField15);
+        
+        
+        //Loop through the entire multidimensional ArrayList to search for the source of the focusLost event.
+        for (int i = 0; i < vertexCount; i++){
+        
+            int arrayListElementSize = jFormattedTextFields.get(i).size();
+            
+            //If the event source is identified.
+            for (int j = 0; j < arrayListElementSize; j++){
+            
+                    //We retrieve the contents of the source and the other jFormattedTextField associated with it for validation.
+                    String content;
+                    String content2;
+                    content = jFormattedTextFields.get(i).get(0).getText().trim();
+                    content2 = jFormattedTextFields.get(i).get(1).getText().trim();
+                    
+                    
+                    //Validate the inputs of the source and its associated jFormattedTextField.
+                    if(validateJFormatterTextFieldValue(content) && validateJFormatterTextFieldValue(content2)){
+                    
+                        System.out.println("True");
+                        //We start our calculation here by calling the calculate() method and passing in all the necessary arguments.
+                        calculate(i, jFormattedTextFields.get(i).get(0), jFormattedTextFields.get(i).get(1), jFormattedTextFields.get(i).get(2));
+                        break;
+                    }
+                    else{
+                    
+                        //If the validation fails, we set the value of the result textField to null.
+                        System.out.println("False");
+                        jFormattedTextFields.get(i).get(2).setValue(null);
+                        break;
+                    
+                    }
+                    
+            }
+        }
+		
     }//GEN-LAST:event_keyReleased
 
     
     
-    private void keyReleased(){
-    
-    
-    }
+
     
     private boolean validateJFormatterTextFieldValue(String content){
         
