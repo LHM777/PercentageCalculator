@@ -196,3 +196,41 @@ To calculate "x is what % of y", the PercentageCalculator class uses the method 
 In order to convert fraction to percent, the PercentageCalculator class uses the method whatPercentOf() which was was already explored above.
 
 
+# Exception Handling
+
+The HandledException class handles exception handling. During calculation, an exception can occur when dividing by zero. There are two possible exceptions that can happen when dividing by zero. The first one is if the calculation results to "positive infinity". In which case we will pass two parameters to the HandledException class: the String code(INFINITY_EXCEPTION) and the String message ("Infinity") which would inform the user what exception occured. If the calculation didn't result in positive infinity but a division by zero still occured, the message that will be sent back by the HandledException class would be simply "0"(zero) and that will be displayed in the result textfield. 
+
+```java
+public class HandledException extends Exception {
+    
+    
+    //This class handles the Exceptions that are thrown by PercentageCalculator Class.
+    //Since there is a possibility of an exception being generated while calculation occurs, we would need to handle that.
+    //An exception would be generated when division by zero occurs.
+    //An exception would also be generated when infinity occurs.
+    //When that happens, we would throw a custom exception called 'HandledException'
+    //The HandledException class will identify what exception it is and then send back a String message as a response.
+    
+    private String code;
+
+    public HandledException(String code, String message) {
+        super(message);
+        this.setCode(code);
+    }
+
+    public HandledException(String code, String message, Throwable cause) {
+        super(message, cause);
+        this.setCode(code);
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+    
+}
+```
+
