@@ -234,3 +234,44 @@ public class HandledException extends Exception {
 }
 ```
 
+
+# Input Validation
+
+The application uses REGEX to validate the inputs of the jFormatterTextFields. It checks for different number formats. The REGEX will not accept alphanumeric inputs, inputs with symbols and inputs with white spaces in between.
+
+```java
+    private boolean validateJFormatterTextFieldValue(String content){
+        
+        //This method validates the inputs from the jFormatterTextFields.
+        //It uses REGEX to validate the inputs.
+        
+         /*The REGEX checks for the following number formats:
+            
+          00000.00000
+          .12345
+          0.12345
+          00000.12345
+          -12345.12345
+          -12,345.12345
+          123,123,123.12345
+          12345.12345
+          1000
+          1,000
+          -50
+          -50.12345
+        
+        */     
+        if(Pattern.matches("([0]+)(\\.[0]+)*|(\\.\\d+)|([0]+)(\\.\\d+)*|\\-[1-9]+(\\.\\d+)*|\\-[1-9]{1,3}(\\,\\d{3})+(\\.\\d+)?", content)){
+            
+            return true;
+        }
+        else if(Pattern.matches("(\\d{1,3})(\\,\\d{3})*(\\.\\d+)?|\\d+(\\.\\d+)|\\d+|\\-[0]*[1-9]+[0]*(\\.\\d+)*", content)){
+            
+            return true;
+        }
+        
+        return false;
+        
+    }
+```
+
