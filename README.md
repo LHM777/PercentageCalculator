@@ -193,7 +193,7 @@ To calculate "x is what % of y", the PercentageCalculator class uses the method 
 
 ### fraction to percent
 
-In order to convert fraction to percent, the PercentageCalculator class uses the method whatPercentOf() which was was already explored above.
+In order to convert fraction to percent, the PercentageCalculator class uses the method whatPercentOf() which was already explored above.
 
 
 # Exception Handling
