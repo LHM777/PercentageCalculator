@@ -275,3 +275,13 @@ The application uses REGEX to validate the inputs of the jFormatterTextFields. I
     }
 ```
 
+
+# Other Features
+
+### Automatic deletion of trailing zeroes on lost focus event.
+![trailing zeroes](https://user-images.githubusercontent.com/86467782/126302625-9144a3d6-fbd3-4c37-a841-d5f6e284de1b.png)
+
+
+### It works even on big numbers.
+![big numbers](https://user-images.githubusercontent.com/86467782/126304496-39f3247a-593a-4275-a787-d2408529c6f0.png)
+
