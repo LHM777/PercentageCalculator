@@ -1,3 +1,12 @@
+# Table of Contents
+- [PercentageCalculator](#percentagecalculator)
+- [User Interface](#user-interface)
+- [Calculation](#calculation)
+- [Exception Handling](#exception-handling)
+- [Input Validation](#input-validation)
+- [Other Features](#other-features)
+
+
 # PercentageCalculator
 This percentage calculator was built using Java Swing. 
 
